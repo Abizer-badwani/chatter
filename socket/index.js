@@ -1,6 +1,6 @@
 import { Server } from 'socket.io'
 
-const io = new Server(8080, {cors: { origin: 'http://localhost:3000', credentials: true } })
+const io = new Server(8080, {cors: { origin: ['http://localhost:3000', 'http://localhost:8085'], credentials: true } })
 
 let activeUsers = []
 
