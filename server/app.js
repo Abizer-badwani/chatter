@@ -19,17 +19,15 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 
-app.use(express.static(path.join(path.resolve('../client/build'))))
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(path.resolve('..'), "client", "build", "index.html"))
-})
-
-
+app.use(express.static('../client/build'))
 
 app.use('/auth', userRouter)
 app.use('/chat', chatRouter)
 app.use('/msg', msgRouter)
+
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "client", "build", "index.html"))
+})
 
 app.listen(process.env.PORT)
 

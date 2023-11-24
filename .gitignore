@@ -5,12 +5,9 @@
 
 /server/.env
 /server/node_modules/
-/server/package.json
-/server/package-lock.json
 
 /socket/node_modules/
-/socket/package.json
-/socket/package-lock.json
+
 
 # production
 client/build/
