@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #333;
+    list-style: none;
+    text-decoration: none;
+    border: 0px;
+    outline: none;
+    // border: 1px solid black;
+    background: transparent;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+       
+    input[type='email']{
+            text-transform: lowercase;
+        }
+        
+    input::placeholder{
+            text-transform: capitalize;
+        }
+}
+

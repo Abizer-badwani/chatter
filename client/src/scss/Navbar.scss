@@ -1,0 +1,26 @@
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: lightsteelblue;
+    justify-content: space-between;
+    padding: 0 5%;
+
+    div {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    mark {
+        height: 5vh;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    mark:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 1000px) {}

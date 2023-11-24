@@ -1,0 +1,57 @@
+.chat-box-container {
+    width: 75vw;
+    margin: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    mark {
+        height: 100%;
+        background-color: rgba(176, 196, 222, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        color: #999;
+    }
+
+    header {
+        background-color: lightsteelblue;
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .dustbin {
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .dustbin:hover {
+            transform: scale(1.1);
+        }
+
+        .dustbin:active {
+            transform: scale(0.9);
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .chat-box-container {
+        width: 85vw;
+        margin: 1rem 0.5rem;
+
+        mark {
+            font-size: 1rem;
+        }
+
+    }
+}

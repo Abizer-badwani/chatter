@@ -1,0 +1,36 @@
+.message-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(176, 196, 222, 0.1);
+    padding: 1rem;
+    gap: 1%;
+
+    .send-btn{
+        padding: 0.7rem 2rem;
+        background-color: lightsteelblue;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s ease;
+    }
+
+    .send-btn:active{
+        transform: scale(0.9);
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .message-box{
+        gap: 0;
+    
+        .send-btn{
+            padding: 0.7rem 1.2rem;
+        }
+    }
+}

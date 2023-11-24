@@ -1,0 +1,61 @@
+.list {
+    overflow: auto;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    mark {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem;
+        margin: 0.4rem 0;
+        background-color: rgba(176, 196, 222, 0.2);
+        border-radius: 5px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        .small-chat {
+            display: none;
+        }
+
+        .color {
+            background-color: rgb(176, 196, 222);
+            color: #fff;
+        }
+
+        blockquote{
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 50px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .list {
+
+        mark { 
+        padding: 1rem 0.6rem;
+
+            .chat {
+                display: none;
+            }
+
+            .small-chat {
+                display: flex;
+            }
+
+            .color {
+                background-color: rgb(176, 196, 222);
+                color: #fff;
+            }
+        }
+    }
+
+}

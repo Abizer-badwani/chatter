@@ -1,0 +1,98 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 10;
+    transition: all 1s ease;
+
+    section {
+        width: 80vw;
+    }
+
+    aside {
+        width: 20vw;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 3px #777;
+        padding: 3rem 0;
+
+        mark {
+
+            .profile-icon {
+                width: 100%;
+                margin: 2rem 0;
+
+            }
+
+            .profile-name {
+                text-transform: capitalize;
+            }
+
+            .profile-name,
+            .profile-email {
+                font-size: 1rem;
+                margin: 0.4rem 1rem;
+                padding: 1rem;
+                border-bottom: 2px solid lightsteelblue;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+            }
+        }
+
+        button {
+            padding: 1rem;
+            margin: 1rem 3rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        button:hover {
+            background-color: tomato;
+            border: 1px solid tomato;
+            color: #fff;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+    }
+
+}
+
+.show {
+    right: 0vw;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .wrapper {
+
+        section {
+            width: 20vw;
+        }
+
+        aside {
+            width: 80vw;
+
+            mark {
+                margin: 0 1rem;
+
+                .profile-icon {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}
